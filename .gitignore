@@ -1,0 +1,24 @@
+# IntelliJ
+.idea/
+*.iml
+
+**/bin/
+
+# Build
+target/
+out/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spring local secrets
+**/src/main/resources/application-local.properties
+
+# Environment files
+.env
+.env.*
+!.env.example
