@@ -34,6 +34,10 @@ public class JwtService {
             getClaims(token);
             return true;
         } catch (Exception e) {
+            System.out.println("JWT VALIDATION FAILED");
+            System.out.println("Exception: " + e.getClass().getName());
+            System.out.println("Message: " + e.getMessage());
+            e.printStackTrace();
             return false;
         }
     }
